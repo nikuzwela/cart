@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.cart-details{
+    display: grid;
+    grid-template-columns: 0.3fr 1fr;
+    border-top: 1px solid rgb(124, 123, 123) ;
+    height: 200px;
+    align-items: center;
+   
+}
+.cart-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.all-cart{
+    width: 80%;
+    border: 2px solid rgb(124, 123, 123);
+}
+.cart-details img{
+    height: 150px;
+    width: 150px;
+    margin-left: 40px;
+}
+.back{
+    height: 80px; 
+    padding-top: 20px;
+    font-size: 20px;
+    margin-left: 40px;
+}
+.right{
+    display: grid;
+    grid-template-columns: 1fr 0.3fr;
+}
+.btn{
+    display: flex;
+    gap: 10px;
+    border: 1px solid rgb(124, 123, 123);
+    border-radius: 10px;
+    width: 90px;
+    padding: 3px 5px 3px 10px;
+    margin-top: 10px;
+}
+.btn button{
+    width: 40px;
+}
+.btn button:hover{
+    background-color: rgb(228, 223, 216);
+    border: none;
+}
+.click button{
+    width: 100px;
+    border-radius: 10px;
+    border: 1px solid rgb(124, 123, 123);
+    height: 30px;
+    margin-top: 40px;
+}
+.click button:hover{
+    background-color: rgb(228, 223, 216);
+    border: none;
+}
+.click span {
+    font-weight: 600;
+}
+.description h5{
+font-weight: 600;
+margin-top: 20px;
+}
+.description h1{
+font-weight: 400;
+font-size: 25px;
+ }
+ .all-cart header{
+    display:flex;
+    justify-content:space-between;
+ }
+ .total{
+    margin: 20px 40px ;
+    color:rgb(124, 123, 123) ;
+    font-weight: 600;
+   
+ }
+
+ @media screen and (max-width:820px) and (min-width:540px){
+   .cart-details{
+    height: 350px;
+    display: block;
+   } 
+   .cart-details img{
+   margin-left: 10px;
+   width: 130px;
+   }
+   .description h1{
+    font-size:20px ;
+   }
+   
+ }
+ @media screen and (max-width:539px) and (min-width:340px){
+    .cart-details{
+     height: 370px;
+     display: block;
+    } 
+    .cart-details img{
+    margin-left: 10px;
+    width: 130px;
+    }
+    .description h1{
+     font-size:20px ;
+    }
+    .all-cart{
+        width: 90%;
+    } 
+  }
+  @media screen and (max-width:339px) {
+    .cart-details{
+     height: 370px;
+     display: block;
+    } 
+    .cart-details img{
+    margin-left: 10px;
+    width: 100px;
+    height: 120px;
+    }
+    .description h1{
+     font-size:15px ;
+    }
+    .all-cart{
+        width: 90%;
+    }
+   .container header h2{
+        display: none;
+    }
+  }

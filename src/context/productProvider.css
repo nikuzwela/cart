@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.product-card{
+    margin-bottom: 20px;
+    padding:20px 20px ;
+    border-radius: 15px;
+    margin-left: 20px;
+    border:2px solid rgb(124, 123, 123);
+}
+.product-card img{
+    width: 200px;
+    height: 200px;
+    margin: auto;
+}
+.product-card img:hover{
+    transform: scale(1.1);
+}
+.product-container {
+    display: grid;
+    margin-left: 30px;
+    margin-right: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.cart{
+  font-size: 25px;
+  font-weight: bolder;
+  margin-left: 40px;
+}
+.product-card h1{
+    font-size: 20px;
+    padding-bottom: 5px;
+    font-weight: 700;
+}
+.product-card h3{
+    font-size: 25px;
+    color:rgb(124, 123, 123);
+    padding-bottom: 5px;
+    font-weight: 600;
+}
+.product-card h5{
+    padding-top: 10px;
+    font-weight: 700;
+}
+.container header h2{
+    border: 2px solid rgb(124, 123, 123);
+    padding:3px 20px 3px 20px ;
+    float: right;
+    margin-right: 40px;
+    margin-top:20px;
+}
+.container header {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 40px 5px 40px;
+}
+.container header :link{
+    font-weight: bold;
+    font-size: 20px;
+}
+@media screen and (max-width:1280px){
+ .product-container{
+    grid-template-columns: 1fr 1fr 1fr;
+ } 
+
+}
+@media screen and (max-width:820px) and (min-width:540px){
+    .product-container{
+       grid-template-columns: 1fr 1fr ;
+    } 
+      
+ }
+ @media screen and (max-width:539px) and (min-width:340px){
+    .product-container{
+       grid-template-columns: 1fr  ;
+    }   
+ }
+ @media screen and (max-width:339px) {
+    .product-container{
+       grid-template-columns: 1fr ;
+       margin-left: 10px;
+    } 
+      
+ }
+
